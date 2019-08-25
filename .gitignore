@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+
+# SQLite databases
+*.sqlite
+
+# Pycache
+*.pyc
+__pycache__/
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# API KEys
+api_keys.json

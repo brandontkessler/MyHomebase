@@ -1,0 +1,9 @@
+{
+    "SECRET_KEY": "afundevelopmentkey",
+    "MAIL_USERNAME": "brandontkesslerdev@gmail.com",
+    "MAIL_PASSWORD": "brandontkesslerdev1!",
+    "MAIL_SUBJECT_PREFIX": "[Flask Template]",
+    "MAIL_SENDER":  "Admin <noreply.brandontkesslerdev@gmail.com>",
+    "DEV_DATABASE_URL": "postgresql://dev:dev@localhost/myhomebase_dev",
+    "TEST_DATABASE_URL": "postgresql://dev:dev@localhost/myhomebase_test"
+}

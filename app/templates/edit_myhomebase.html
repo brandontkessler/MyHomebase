@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Edit MyHomebase{% endblock %}
+
+{% block page_content %}
+
+<a href="{{ url_for('main.myhomebase') }}" class="btn btn-outline-secondary mb-3">Back to MyHomebase</a>
+
+<form action="" method="POST">
+  {{ form.hidden_tag() }}
+  <legend class="border-bottom mb-4">Make Some Changes</legend>
+  <div class="form-group">
+    {{ form.city.label() }} is currently set to <strong>{{ current_user.city }}</strong>
+    {{ form.city(class="form-control") }}
+  </div>
+  <div class="form-group mt-4">
+    {{ form.submit(class="btn btn-outline-info") }}
+  </div>
+</form>
+{% endblock %}

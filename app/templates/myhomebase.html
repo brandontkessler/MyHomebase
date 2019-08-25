@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+   <h1>HOMEBASE</h1>
+
+   <a href="{{ url_for('main.edit_myhomebase') }}">edit MyHomebase</a>
+   <p>The weather in {{ current_user.city }} right now is: </p>
+   <h3>{{ weather['currently']['temperature'] }}</h3>
+   <p>With a {{ weather['currently']['precipProbability'] }}% chance of rain.</p>
+
+   <h3>Coordinates</h3>
+   <p>Latitude: {{ current_user.latitude }}</p>
+   <p>Longitude: {{ current_user.longitude }}</p>
+</div>
+{% endblock %}
